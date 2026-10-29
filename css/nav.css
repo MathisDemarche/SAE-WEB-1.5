@@ -1,0 +1,129 @@
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    border-bottom: var(--border-width) solid var(--color-border);
+    background-color: #ffffffd9;
+    backdrop-filter: blur(10px);
+    z-index: 3;
+}
+
+header .logo {
+    flex: 0 0 10rem;
+    width: 10rem;
+    min-width: 10rem;
+    max-width: 10rem;
+    height: auto;
+    cursor: pointer;
+    transition: 200ms ease;
+}
+
+header .logo:hover {
+    zoom: 1.05;
+}
+
+header .logo img {
+    width: 100%;
+    height: auto;
+}
+
+header nav {
+    order: 3;
+    flex: 1 0 100%;
+    min-width: 0;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    gap: var(--spacing-xs);
+}
+
+nav ul li {
+    flex: 1 1 calc(50% - var(--spacing-xs));
+    min-width: 0;
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    min-height: 2.75rem;
+    padding: var(--spacing-sm) var(--spacing-xs);
+    text-decoration: none;
+    color: var(--color-text-secondary);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    border-radius: var(--border-radius-sm);
+    transition: 200ms ease;
+}
+
+nav ul li a.active {
+    color: var(--color-primary);
+}
+
+nav ul li a:hover {
+    color: var(--color-primary);
+    zoom: 1.1;
+    text-shadow: 0 2px 5px var(--color-primary-shadow);
+}
+
+header button {
+    width: auto;
+    padding: 20px 35px;
+    border: 0;
+    border-radius: var(--border-radius);
+    background-color: var(--color-secondary);
+    color: var(--color-text-on-dark);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: 200ms ease;
+}
+
+header button:hover {
+    background-color: var(--color-primary);
+    transform: scale(1.05);
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    
+}
+
+@media (min-width: 18.75rem) {
+    header {
+        padding-inline: 5vw;
+    }
+}
+
+@media (min-width: 20.833333rem) {
+    header {
+        gap: 3vw;
+    }
+
+}
+
+@media (min-width: 23.4375rem) {
+    header {
+        padding-block: 4vw;
+    }
+}
+
+@media (min-width: 31.25rem) {
+    header {
+        padding-block: var(--spacing-lg);
+    }
+}
+
+@media (min-width: 41.666667rem) {
+    header {
+        gap: var(--spacing-lg);
+    }
+
+}

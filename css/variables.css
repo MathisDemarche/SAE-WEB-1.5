@@ -1,0 +1,77 @@
+:root {
+    /* Couleurs */
+    --color-text: #171b24;
+    --color-text-secondary: #374151;
+    --color-text-muted: #6b7280;
+    --color-background: #ffffff;
+    --color-surface: #fafafa;
+    --color-surface-alt: #f3f4f6;
+    --color-primary: #ee641c;
+    --color-primary-shadow: #ee661c3f;
+    --color-primary-soft: #fff7ed;
+    --color-secondary: #102033;
+    --color-accent: #42a5f5;
+    --color-border: #E5E7EB;
+    --color-text-on-dark: #ffffff;
+
+    /* Dégradés — direction proposée pour le web */
+    --gradient-title: linear-gradient(
+        225deg,
+        #006DB5 0%,
+        #052C4A 100%
+    );
+    --gradient-social: linear-gradient(
+        135deg,
+        #13203b 24%,
+        #1f2936 100%
+    );
+    --gradient-footer: linear-gradient(
+        90deg,
+        #052c4a 0%,
+        #006db5 100%
+    );
+
+    /* Typographie */
+    --font-family-base: Inter, Arial, Helvetica, sans-serif;
+
+    --font-size-xs: 0.75rem;      /* 12 px */
+    --font-size-sm: 0.8125rem;    /* 13 px */
+    --font-size-base: 0.875rem;  /* 14 px */
+    --font-size-lg: 1rem;        /* 16 px */
+    --font-size-card-title: 1.25rem;   /* 20 px */
+    --font-size-block-title: 1.5rem;   /* 24 px */
+    --font-size-section-title: 2rem;  /* 48 px */
+    --font-size-hero: 34px;            /* 64 px */
+
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --font-weight-black: 900;
+
+    --line-height-base: 1.35;
+
+    /* Espacements récurrents */
+    --spacing-xs: 0.3125rem;  /* 5 px */
+    --spacing-sm: 0.625rem;   /* 10 px */
+    --spacing-md: 0.9375rem;  /* 15 px */
+    --spacing-lg: 1.25rem;    /* 20 px */
+    --spacing-xl: 1.5rem;     /* 24 px */
+    --spacing-2xl: 2rem;      /* 32 px */
+    --spacing-3xl: 3rem;      /* 48 px */
+
+    /* Mise en page */
+    --container-width: 73.75rem; /* 1180 px */
+    --page-gutter: 3.125rem;     /* 50 px sur la maquette */
+    --column-gap: 1.5rem;        /* 24 px */
+
+    /* Bordures et arrondis */
+    --border-width: 1px;
+    --border-radius-sm: 0.3125rem; /* 5 px */
+    --border-radius: 0.5rem;       /* 8 px */
+    --border-radius-card: 0.625rem; /* 10 px */
+    --border-radius-lg: 0.9375rem;  /* 15 px */
+    --border-radius-pill: 9999px;
+}

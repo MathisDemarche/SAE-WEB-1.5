@@ -1,0 +1,124 @@
+@media (min-width: 48rem) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-inline: var(--page-gutter);
+        padding-top: var(--spacing-xl);
+        gap: var(--spacing-xl);
+    }
+
+    nav ul li {
+        flex-basis: auto;
+        flex-grow: 0;
+        flex-shrink: 1;
+    }
+
+    nav ul {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+    nav ul li a {
+        padding: var(--spacing-sm);
+    }
+
+    header button {
+        order: 1;
+    }
+
+    .raccourcis__item {
+        flex-grow: 1;
+    }
+    .accescontact__title__icon {
+        display: flex;
+    }
+    .infopratiques {
+        flex-direction: row;
+
+    }
+    .infopratiques__horaires,
+    .infopratiques__accescontact {
+        flex-grow: 1;
+        gap: var(--spacing-xl);
+        max-width: 800px;
+    }
+
+    .actualites {
+        margin: 35px;
+        border-radius: var(--border-radius);
+        border: 1px solid var(--color-border);
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 15%);
+    }
+
+    .actualites__title {
+        padding: var(--spacing-md) clamp(6rem, 15vw, 11rem) var(--spacing-md) var(--spacing-md);
+        gap: var(--spacing-md);
+        align-self: center;
+        text-align: center;
+    }
+
+    .actualites__title h2 {
+        font-size: clamp(var(--font-size-section-title), 2vw, calc(var(--font-size-section-title) + 1rem));
+    }
+
+    .actualites__cards {
+        flex-direction: row;
+    }
+    .actualites__card {
+        align-self: stretch;
+    }
+    .actualites__arrow {
+        display: block;
+    }
+
+    .actualites__card__content h3 {
+        font-size: clamp(5px, 1.5vw, 21px);
+    }
+
+    .actualites__card__content p {
+        font-size: clamp(2px, 1.5vw, 18px);
+    }
+    .actualites__card__content p.actualites__card__date {
+        font-size: clamp(2px, 1vw, var(--font-size-base));
+    }
+    .actualites__card__link {
+        font-size: clamp(2px, 1.5vw, 21px);
+    }
+}
+
+
+@media (min-width: 64rem) {
+    header {
+        flex-wrap: nowrap;
+    }
+
+    header nav {
+        order: 0;
+        flex: 1 1 auto;
+        width: auto;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: var(--spacing-xs);
+    }
+
+    nav ul li {
+        flex: 0 1 auto;
+    }
+
+    nav ul li a {
+        padding-inline: var(--spacing-sm);
+    }
+    .horaires__item p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 25rem) {
+    .raccourcis__item {
+        flex-grow: 1;
+    }
+
+}
