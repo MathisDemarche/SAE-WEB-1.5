@@ -2,123 +2,407 @@
     header {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        padding-inline: var(--page-gutter);
-        padding-top: var(--spacing-xl);
-        gap: var(--spacing-xl);
-    }
-
-    nav ul li {
-        flex-basis: auto;
-        flex-grow: 0;
-        flex-shrink: 1;
-    }
-
-    nav ul {
         flex-wrap: nowrap;
         justify-content: space-between;
+        align-items: center;
+        gap: var(--spacing-md);
+        padding: var(--spacing-md) var(--page-gutter);
     }
-    
-    nav ul li a {
+
+    header .logo {
+        flex: 0 0 8rem;
+        width: 8rem;
+        min-width: 8rem;
+    }
+
+    header nav {
+        order: 1;
+        flex: 1;
+        width: auto;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: var(--spacing-xs);
+    }
+
+    header nav ul li {
+        flex: 0 1 auto;
+    }
+
+    header nav ul li a {
         padding: var(--spacing-sm);
+        font-size: var(--font-size-xs);
+        white-space: nowrap;
     }
 
     header button {
-        order: 1;
+        order: 2;
+        flex: 0 0 auto;
+        padding: var(--spacing-sm) var(--spacing-md);
     }
 
     .raccourcis__item {
         flex-grow: 1;
+        width: 180px;
+        height: 180px;
+        align-self: center;
+        flex-basis: auto;
     }
+
     .accescontact__title__icon {
         display: flex;
     }
+
     .infopratiques {
         flex-direction: row;
-
     }
+
     .infopratiques__horaires,
     .infopratiques__accescontact {
-        flex-grow: 1;
+        flex: 1 1 0;
         gap: var(--spacing-xl);
-        max-width: 800px;
     }
 
     .actualites {
         margin: 35px;
         border-radius: var(--border-radius);
         border: 1px solid var(--color-border);
-        box-shadow: 0 0px 10px rgba(0, 0, 0, 15%);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     }
 
     .actualites__title {
-        padding: var(--spacing-md) clamp(6rem, 15vw, 11rem) var(--spacing-md) var(--spacing-md);
+        padding: var(--spacing-md);
         gap: var(--spacing-md);
         align-self: center;
         text-align: center;
     }
 
     .actualites__title h2 {
-        font-size: clamp(var(--font-size-section-title), 2vw, calc(var(--font-size-section-title) + 1rem));
+        font-size: clamp(
+            var(--font-size-section-title),
+            2vw,
+            calc(var(--font-size-section-title) + 1rem)
+        );
     }
 
     .actualites__cards {
+        display: flex;
         flex-direction: row;
+        align-items: stretch;
+        gap: var(--spacing-md);
     }
+
     .actualites__card {
+        flex: 1 1 0;
+        min-width: 0;
         align-self: stretch;
     }
+
     .actualites__arrow {
         display: block;
     }
 
     .actualites__card__content h3 {
-        font-size: clamp(5px, 1.5vw, 21px);
+        font-size: clamp(1rem, 1vw, 1.5rem);
     }
 
     .actualites__card__content p {
-        font-size: clamp(2px, 1.5vw, 18px);
+        font-size: clamp(0.5rem, 1.2vw, 1rem);
     }
-    .actualites__card__content p.actualites__card__date {
-        font-size: clamp(2px, 1vw, var(--font-size-base));
+
+    p.actualites__card__date {
+        font-size: clamp(0.3rem, 1vw, 0.7rem);
     }
+
     .actualites__card__link {
-        font-size: clamp(2px, 1.5vw, 21px);
+        font-size: clamp(0.3rem, 1vw, 0.875rem);
     }
+
+    .actualites__card img {
+        width: 100%;
+        height: clamp(100px, 13vw, 200px);
+        object-fit: cover;
+    }
+
+    .contact {
+        padding: 2rem;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .contact__container {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .contact__container__form,
+    .social-panel {
+        flex: 1 1 0;
+        min-width: 0;
+        padding: 1.75rem;
+    }
+
+    .social-card {
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .social-icon,
+    .fa-facebook,
+    .fa-instagram {
+        width: 48px;
+        height: 48px;
+    }
+
+    .fa-facebook,
+    .fa-instagram {
+        font-size: 1.5rem;
+    }
+
+    .social-name {
+        font-size: 1rem;
+    }
+
+
+    .hero {
+        margin-top: var(--spacing-xl);
+        padding: var(--spacing-xl);
+    }
+
+    .hero__presentation {
+        padding: var(--spacing-lg);
+    }
+
+    .hero__presentation img {
+        width: clamp(4rem, 9vw, 6rem);
+        height: clamp(4rem, 9vw, 6rem);
+    }
+
+    .hero h1 {
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    .raccourcis--grimper {
+        gap: var(--spacing-md);
+    }
+
+    .raccourcis--grimper .raccourcis__item {
+        flex: 1 1 calc(25% - var(--spacing-md));
+        min-width: 0;
+        min-height: 6rem;
+    }
+
+    .page-grimper__section {
+        padding: var(--spacing-xl);
+    }
+
+    .pratique__items,
+    .materiel__items {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        gap: var(--spacing-md);
+    }
+
+    .pratique__item,
+    .materiel__item {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+    .materiel__item + .materiel__item {
+        padding-top: 0;
+        padding-left: var(--spacing-lg);
+        border-top: 0;
+        border-left: var(--border-width) solid var(--color-border);
+    }
+
+    .cours__cards,
+    .tarifs__items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        gap: var(--spacing-md);
+    }
+
+    .cours__card,
+    .tarifs__item {
+        flex: 1 1 calc(50% - var(--spacing-md));
+        min-width: 0;
+    }
+
+    .cours__card img {
+        width: 100%;
+        height: clamp(9rem, 20vw, 13rem);
+        object-fit: cover;
+    }
+
+
+
+    .footer__container__top {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: var(--spacing-2xl);
+    }
+
+    .footer__top__marque {
+        flex-basis: 25%;
+    }
+
+    .footer__top__liens-rapides {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: var(--spacing-2xl);
+        width: auto;
+    }
+
+    .footer__bottom {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .tarifs__items {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        gap: var(--spacing-md);
+        justify-content: center;
+        
+    }
+
+    .tarifs__item {
+        flex: 1 1 calc(30% - var(--spacing-md));
+        min-width: 0;
+        box-sizing: border-box;
+        max-width: 700px
+    }
+    .tarifs__item:nth-child(2n) {
+        flex-basis: calc(10% - var(--spacing-md));
+        max-width: 800px;
+        transform: translateY(-4px);
+    }
+
+    .materiel__item h2 span {
+        display: flex;
+    }
+    .materiel__items svg {
+        display: block;
+
+    }
+    
 }
 
-
-@media (min-width: 64rem) {
+@media (min-width: 55rem) {
     header {
-        flex-wrap: nowrap;
+        gap: var(--spacing-md);
     }
 
     header nav {
         order: 0;
-        flex: 1 1 auto;
-        width: auto;
     }
 
-    nav ul {
+    header nav ul {
         justify-content: center;
         gap: var(--spacing-xs);
     }
 
-    nav ul li {
-        flex: 0 1 auto;
-    }
-
-    nav ul li a {
-        padding-inline: var(--spacing-sm);
-    }
     .horaires__item p {
         font-size: 20px;
     }
-}
 
-@media (max-width: 25rem) {
-    .raccourcis__item {
-        flex-grow: 1;
+    .contact__container {
+        flex-direction: row;
+        gap: 2rem;
     }
 
+    .footer__top__liens-rapides {
+        flex-basis: 40%;
+    }
+
+    .footer__bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__bottom__adresse svg {
+        display: block;
+    }
+
+    .actualites__cards:nth-child(3),
+    .actualites__cards:nth-child(4),
+    .actualites__cards:nth-child(5) {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media (min-width: 65rem) {
+    .contact__container {
+        justify-content: space-between;
+    }
+
+    .hero {
+        padding: var(--spacing-2xl);
+    }
+
+    .hero h1 {
+        font-size: clamp(2.5rem, 4vw, 3.5rem);
+    }
+
+    .raccourcis--grimper {
+        gap: var(--spacing-md);
+    }
+
+    .pratique__items {
+        gap: var(--spacing-lg);
+    }
+
+    .cours__cards,
+    .tarifs__items {
+        flex-wrap: nowrap;
+    }
+
+    .cours__card,
+    .tarifs__item {
+        flex: 1 1 0;
+    }
+
+    .cours__card > img {
+        height: clamp(8rem, 13vw, 12rem);
+    }
+
+    .materiel__items {
+        gap: var(--spacing-2xl);
+    }
+}
+
+@media (max-width: 55rem) {
+    .actualites__cards > :nth-child(3),
+    .actualites__cards > :nth-child(4),
+    .actualites__cards > :nth-child(5) {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 105rem) {
+    .actualites__cards > :nth-child(3),
+    .actualites__cards > :nth-child(4) {
+        display: none;
+    }
+}
+
+@media (max-width: 130rem) {
+    .actualites__cards > :nth-child(4) {
+        display: none;
+    }
 }

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Vertical, escalade, événements, sorties, stages, compétitions, La Rochelle">
+    <meta name="author" content="Vertical">
+    <meta name="description" content="Retrouvez les événements du club Vertical : sorties en falaise, stages, soirées et compétitions.">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Événements | Vertical</title>
+
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/pages/events.css">
+
+    <script src="https://kit.fontawesome.com/21da9b5e07.js" crossorigin="anonymous"></script>
+    <script src="js/events.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="/assets/images/logos/long-logo.png" alt="Logo Vertical">
+            </a>
+        </div>
+
+        <button type="button">Connexion</button>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="grimper.html">Grimper</a></li>
+                <li><a href="events.html" class="active" aria-current="page">Événements</a></li>
+                <li><a href="actu.html">Actualités</a></li>
+                <li><a href="club.html">Le Club</a></li>
+                <li><a href="info.html">Infos pratiques</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__presentation">
+                <img src="/assets/images/logos/logo.png" alt="Logo du club Vertical">
+                <h1>
+                    <span class="hero__title">ÉVÉNEMENTS</span>
+                    <span class="hero__subtitle">& VIE DU CLUB</span>
+                </h1>
+                <h2>Sorties, stages, soirées et compétitions</h2>
+                <p>Vivez l'escalade autrement avec Vertical</p>
+            </div>
+        </section>
+
+        <section class="events-featured" aria-labelledby="events-featured-title">
+            <a class="events-featured__image" href="#evenements" aria-label="Découvrir les événements à venir">
+                <img src="/assets/images/events/img1.png" alt="Grimpeurs dans la salle Vertical pendant une soirée">
+            </a>
+
+            <div class="events-featured__content">
+                <p class="events-tag">À ne pas manquer</p>
+                <h2 id="events-featured-title">VERTICAL Night Contest #3</h2>
+
+                <p class="events-featured__date">
+                    <i class="fa-regular fa-calendar-days" aria-hidden="true"></i>
+                    Vendredi 04 décembre de 18h30 à 23h30
+                </p>
+
+                <p class="events-featured__description">
+                    Tu aimes les défis et l'ambiance du club ? Viens participer à notre
+                    soirée spéciale bloc : grimpe, bonne humeur et convivialité au programme.
+                    Tous les niveaux sont les bienvenus !
+                </p>
+
+                <a href="#evenements" class="events-text-link">Voir les événements <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+        </section>
+
+        <!-- Recherche et filtres -->
+        <section class="events-search" aria-labelledby="events-search-title">
+            <div class="events-search__heading">
+                <h2 id="events-search-title">Recherchez un événement</h2>
+                <p>Retrouvez facilement une activité qui vous correspond.</p>
+            </div>
+
+            <form class="events-search__form" id="events-filter-form">
+                <label class="events-search__label" for="event-search">Rechercher</label>
+
+                <div class="events-search__field">
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                    <input type="search" id="event-search" name="search" placeholder="Nom, activité, lieu...">
+                </div>
+
+                <button type="submit" class="events-button events-search__submit">
+                    Rechercher
+                </button>
+
+                <fieldset class="events-filters">
+                    <legend>Catégories</legend>
+
+                    <label class="events-filter">
+                        <input type="radio" name="category" value="all" checked>
+                        <span>Tous les événements</span>
+                    </label>
+
+                    <label class="events-filter">
+                        <input type="radio" name="category" value="sortie">
+                        <span>Sorties & randonnées</span>
+                    </label>
+
+                    <label class="events-filter">
+                        <input type="radio" name="category" value="competition">
+                        <span>Compétitions & démonstrations</span>
+                    </label>
+
+                    <label class="events-filter">
+                        <input type="radio" name="category" value="stage">
+                        <span>Stages & cours</span>
+                    </label>
+
+                    <label class="events-filter">
+                        <input type="radio" name="category" value="soiree">
+                        <span>Soirées & apéro au club</span>
+                    </label>
+
+                    <label class="events-filter">
+                        <input type="radio" name="category" value="atelier">
+                        <span>Ateliers & découverte</span>
+                    </label>
+                </fieldset>
+
+                <fieldset class="events-period">
+                    <legend>Afficher</legend>
+                    <label class="events-period__option">
+                        <input type="checkbox" id="events-upcoming" checked>
+                        <span>Uniquement les événements à venir</span>
+                    </label>
+                </fieldset>
+
+                <button type="reset" class="events-search__reset">Effacer les filtres</button>
+            </form>
+        </section>
+
+        <!-- Liste des événements -->
+        <section class="events-list" id="evenements" aria-labelledby="events-list-title">
+            <div class="events-list__heading">
+                <div>
+                    <h2 id="events-list-title">Prochains événements</h2>
+                    <p>Les prochains rendez-vous à ne pas manquer.</p>
+                </div>
+                <p class="events-list__count" id="events-count" aria-live="polite">6 événements</p>
+            </div>
+
+            <div class="events-grid" id="events-grid">
+
+                <article class="event-card" data-category="sortie" data-date="2026-12-12">
+                    <a href="#" class="event-card__image" aria-label="Découvrir la sortie initiation rappel et grande voie">
+                        <img src="/assets/images/events/grande-voie.jpg" alt="Deux grimpeurs équipés lors d'une sortie en falaise">
+                    </a>
+
+                    <div class="event-card__content">
+                        <p class="event-card__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 12 Décembre 2026</p>
+                        <span class="events-tag">Sortie extérieure</span>
+                        <h3>Initiation Rappel & Grande Voie</h3>
+                        <p class="event-card__description">
+                            Découvrez les bases du rappel et de la grande voie lors d'une sortie encadrée en falaise.
+                        </p>
+
+                        <ul class="event-card__details">
+                            <li><i class="fa-solid fa-person-hiking" aria-hidden="true"></i> Sortie encadrée</li>
+                            <li><i class="fa-solid fa-users" aria-hidden="true"></i> 12 places restantes</li>
+                            <li><i class="fa-solid fa-euro-sign" aria-hidden="true"></i> 15 €</li>
+                        </ul>
+
+                        <a href="#" class="events-button event-card__button">Je m'inscris</a>
+                    </div>
+                </article>
+
+                <article class="event-card" data-category="soiree" data-date="2026-12-18">
+                    <a href="#" class="event-card__image" aria-label="Découvrir la soirée des adhérents">
+                        <img src="/assets/images/events/soiree-club.jpg" alt="Table préparée pour une soirée conviviale au club">
+                    </a>
+
+                    <div class="event-card__content">
+                        <p class="event-card__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 18 Décembre 2026</p>
+                        <span class="events-tag">Vie du club</span>
+                        <h3>Apéro des adhérents & Soirée projection</h3>
+                        <p class="event-card__description">
+                            Un moment pour se retrouver, partager les souvenirs de l'année et découvrir les photos des sorties.
+                        </p>
+
+                        <ul class="event-card__details">
+                            <li><i class="fa-solid fa-users" aria-hidden="true"></i> Ouvert aux adhérents</li>
+                            <li><i class="fa-solid fa-chair" aria-hidden="true"></i> 30 places restantes</li>
+                            <li><i class="fa-solid fa-euro-sign" aria-hidden="true"></i> Gratuit</li>
+                        </ul>
+
+                        <a href="#" class="events-button event-card__button">Je m'inscris</a>
+                    </div>
+                </article>
+
+                <article class="event-card" data-category="sortie" data-date="2026-12-20">
+                    <a href="#" class="event-card__image" aria-label="Découvrir la sortie falaise à Chaucre">
+                        <img src="/assets/images/events/sortie-falaise.jpg" alt="Grimpeur sur une voie rocheuse en extérieur">
+                    </a>
+
+                    <div class="event-card__content">
+                        <p class="event-card__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 20 Décembre 2026</p>
+                        <span class="events-tag">Sortie falaise</span>
+                        <h3>Sortie Falaise — Chaucre</h3>
+                        <p class="event-card__description">
+                            Une journée de grimpe en extérieur pour profiter du rocher et progresser ensemble.
+                        </p>
+
+                        <ul class="event-card__details">
+                            <li><i class="fa-solid fa-mountain" aria-hidden="true"></i> Sortie de club</li>
+                            <li><i class="fa-solid fa-users" aria-hidden="true"></i> 8 places restantes</li>
+                            <li><i class="fa-solid fa-euro-sign" aria-hidden="true"></i> 25 €</li>
+                        </ul>
+
+                        <a href="#" class="events-button event-card__button">Je m'inscris</a>
+                    </div>
+                </article>
+
+                <article class="event-card" data-category="stage" data-date="2026-12-03">
+                    <a href="#" class="event-card__image" aria-label="Découvrir le stage ado initiation bloc">
+                        <img src="/assets/images/events/stage-ado.jpg" alt="Jeune grimpeur en salle d'escalade">
+                    </a>
+
+                    <div class="event-card__content">
+                        <p class="event-card__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 03 Décembre 2026</p>
+                        <span class="events-tag">Stages & cours</span>
+                        <h3>Stage ado — Initiation Bloc</h3>
+                        <p class="event-card__description">
+                            Une séance pour découvrir l'escalade de bloc, apprendre les bons gestes et prendre confiance.
+                        </p>
+
+                        <ul class="event-card__details">
+                            <li><i class="fa-solid fa-child" aria-hidden="true"></i> Spécial adolescents</li>
+                            <li><i class="fa-solid fa-users" aria-hidden="true"></i> 8 places restantes</li>
+                            <li><i class="fa-solid fa-euro-sign" aria-hidden="true"></i> 20 €</li>
+                        </ul>
+
+                        <a href="#" class="events-button event-card__button">Je m'inscris</a>
+                    </div>
+                </article>
+
+                <article class="event-card" data-category="soiree" data-date="2026-12-10">
+                    <a href="#" class="event-card__image" aria-label="Découvrir la soirée Night Climbing">
+                        <img src="/assets/images/events/night-climbing.jpg" alt="Salle d'escalade pendant une soirée nocturne">
+                    </a>
+
+                    <div class="event-card__content">
+                        <p class="event-card__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 10 Décembre 2026</p>
+                        <span class="events-tag">Soirée du club</span>
+                        <h3>Soirée Night Climbing</h3>
+                        <p class="event-card__description">
+                            Une soirée de grimpe dans une ambiance différente, avec musique et défis entre adhérents.
+                        </p>
+
+                        <ul class="event-card__details">
+                            <li><i class="fa-solid fa-moon" aria-hidden="true"></i> Tous niveaux</li>
+                            <li><i class="fa-solid fa-users" aria-hidden="true"></i> 20 places restantes</li>
+                            <li><i class="fa-solid fa-euro-sign" aria-hidden="true"></i> 20 €</li>
+                        </ul>
+
+                        <a href="#" class="events-button event-card__button">Je m'inscris</a>
+                    </div>
+                </article>
+
+                <article class="event-card" data-category="stage" data-date="2026-12-17">
+                    <a href="#" class="event-card__image" aria-label="Découvrir le stage ado initiation bloc">
+                        <img src="/assets/images/events/stage-ado-2.jpg" alt="Grimpeur réalisant un mouvement sur un mur de bloc">
+                    </a>
+
+                    <div class="event-card__content">
+                        <p class="event-card__date"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 17 Décembre 2026</p>
+                        <span class="events-tag">Stages & cours</span>
+                        <h3>Stage ado — Initiation Bloc</h3>
+                        <p class="event-card__description">
+                            Un second créneau pour s'initier au bloc et découvrir les techniques essentielles de l'escalade.
+                        </p>
+
+                        <ul class="event-card__details">
+                            <li><i class="fa-solid fa-child" aria-hidden="true"></i> Spécial adolescents</li>
+                            <li><i class="fa-solid fa-users" aria-hidden="true"></i> 8 places restantes</li>
+                            <li><i class="fa-solid fa-euro-sign" aria-hidden="true"></i> 20 €</li>
+                        </ul>
+
+                        <a href="#" class="events-button event-card__button">Je m'inscris</a>
+                    </div>
+                </article>
+
+                <p class="events-grid__empty" id="events-empty" hidden>
+                    Aucun événement ne correspond à votre recherche.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer : reprend le footer déjà utilisé sur les autres pages -->
+    <footer>
+        <div class="footer__container">
+            <div class="footer__container__top">
+                <div class="footer__top__marque">
+                    <img src="/assets/images/logos/logo.png" alt="Logo Vertical">
+                    <h3>Vertical</h3>
+                    <p>Grimper, explorer, partager — le club de bloc et de voie de La Rochelle.</p>
+                </div>
+
+                <div class="footer__top__liens-rapides">
+                    <div class="footer__top__liens-rapides__panel">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="grimper.html">Grimper</a></li>
+                            <li><a href="events.html">Événements</a></li>
+                            <li><a href="actu.html">Actualités</a></li>
+                            <li><a href="club.html">Le Club</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__top__liens-rapides__panel">
+                        <h3>Pratiques</h3>
+                        <ul>
+                            <li><a href="grimper.html#tarifs">Tarifs</a></li>
+                            <li><a href="info.html#horaires">Horaires</a></li>
+                            <li><a href="info.html#contact">Contact</a></li>
+                            <li><a href="info.html#FAQ">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__bottom__adresse">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    <div class="footer__bottom__adresse__content">
+                        <h3>Adresse</h3>
+                        <p>144 rue des champignons</p>
+                        <p>17100 La Rochelle, France</p>
+                    </div>
+                </div>
+
+                <div class="footer__bottom__reseaux">
+                    <a href="https://www.facebook.com/clubvertical" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook
+                    </a>
+                    <a href="https://www.instagram.com/vertical_larochelle" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram
+                    </a>
+                </div>
+
+                <div class="footer__bottom__copyright">
+                    <p>&copy; 2026 Vertical-LaRochelle.fr</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
