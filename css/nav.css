@@ -75,9 +75,10 @@ nav ul li a:hover {
     text-shadow: 0 2px 5px var(--color-primary-shadow);
 }
 
-header button {
+header button,
+header .header__connexion {
     width: auto;
-    padding: 20px 35px;
+    padding: 15px 25px;
     border: 0;
     border-radius: var(--border-radius);
     background-color: var(--color-secondary);
@@ -85,10 +86,12 @@ header button {
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-semibold);
     cursor: pointer;
+    text-decoration: none;
     transition: 200ms ease;
 }
 
-header button:hover {
+header button:hover,
+header .header__connexion:hover {
     background-color: var(--color-primary);
     transform: scale(1.05);
     outline: 2px solid var(--color-primary);

@@ -193,6 +193,7 @@ footer {
 .footer__top__liens-rapides ul li a:hover {
     color: var(--color-primary);
     transform: scale(1.02);
+    text-decoration: underline;
 }
 
 .footer__bottom {

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Connectez-vous à votre espace Vertical.">
+        <meta name="theme-color" content="#102033">
+
+        <title>Connexion | Vertical</title>
+
+        <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/pages/connexion.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="https://kit.fontawesome.com/21da9b5e07.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="connexion-page">
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/assets/images/logos/long-logo.png" alt="Logo Vertical">
+                </a>
+            </div>
+            <a class="header__connexion" href="connexion.html" aria-current="page">Connexion</a>
+            <nav aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="grimper.html">Grimper</a></li>
+                    <li><a href="events.html">Événements</a></li>
+                    <li><a href="actu.html">Actualités</a></li>
+                    <li><a href="club.html">Le Club</a></li>
+                    <li><a href="info.html">Infos pratiques</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="connexion">
+            <div class="connexion__intro">
+                <img src="/assets/images/logos/logo.png" alt="" aria-hidden="true">
+                <p class="connexion__eyebrow">Votre espace Vertical</p>
+                <h1>Content de vous<br><span>revoir parmi nous.</span></h1>
+                <p>Retrouvez vos réservations, vos cours et toute l'actualité de la communauté.</p>
+            </div>
+
+            <section class="connexion__card" aria-labelledby="connexion-title">
+                <div class="connexion__card-heading">
+                    <p class="connexion__eyebrow">Espace membre</p>
+                    <h2 id="connexion-title">Se connecter</h2>
+                    <p>Accédez à votre compte Vertical.</p>
+                </div>
+
+                <form class="connexion__form" action="#" method="post">
+                    <div class="connexion__field">
+                        <label for="email">Adresse e-mail</label>
+                        <input type="email" id="email" name="email" autocomplete="email" placeholder="vous@exemple.fr" required>
+                    </div>
+
+                    <div class="connexion__field">
+                        <div class="connexion__label-row">
+                            <label for="password">Mot de passe</label>
+                            <a href="info.html#contact">Mot de passe oublié ?</a>
+                        </div>
+                        <input type="password" id="password" name="password" autocomplete="current-password" placeholder="Votre mot de passe" required>
+                    </div>
+
+                    <label class="connexion__remember" for="remember">
+                        <input type="checkbox" id="remember" name="remember">
+                        <span>Se souvenir de moi</span>
+                    </label>
+
+                    <button class="connexion__submit" type="submit">
+                        Se connecter
+                        <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                    </button>
+                </form>
+
+                <p class="connexion__signup">Pas encore membre ? <a href="club.html">Découvrir le club</a></p>
+            </section>
+        </main>
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__container__top">
+                <div class="footer__top__marque">
+                    <img src="/assets/images/logos/logo.png" alt="Logo Vertical">
+                    <h3>Vertical</h3>
+                    <p>Grimper, explorer, partager — le club de bloc et de voie de La Rochelle.</p>
+                </div>
+                <div class="footer__top__liens-rapides">
+                    <div class="footer__top__liens-rapides__panel">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="grimper.html">Grimper</a></li>
+                            <li><a href="events.html">Événements</a></li>
+                            <li><a href="actu.html">Actualités</a></li>
+                            <li><a href="club.html">Le Club</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__top__liens-rapides__panel">
+                        <h3>Pratiques</h3>
+                        <ul>
+                            <li><a href="grimper.html#tarifs">Tarifs</a></li>
+                            <li><a href="info.html#horaires">Horaires</a></li>
+                            <li><a href="info.html#contact">Contact</a></li>
+                            <li><a href="info.html#FAQ">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom__adresse">
+                    <div class="footer__bottom__adresse__content">
+                        <h3>Adresse</h3>
+                        <p>144 rue des champignons</p>
+                        <p>17100 La Rochelle, France</p>
+                    </div>
+                </div>
+                <div class="footer__bottom__reseaux">
+                    <a href="https://www.facebook.com/clubvertical" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a href="https://www.instagram.com/vertical_larochelle" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </div>
+                <div class="footer__bottom__copyright">
+                    <p>&copy; 2026 Vertical-LaRochelle.fr</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
 
     --color-text: #171b24;
@@ -30,7 +32,7 @@
         #006db5 100%
     );
 
-    --font-family-base: Inter, Arial, Helvetica, sans-serif;
+    --font-family-base: "Inter", sans-serif;
 
     --font-size-xs: 0.75rem;      /* 12 px */
     --font-size-sm: 0.8125rem;    /* 13 px */

@@ -362,7 +362,6 @@
 }
 
 .actualites__card img {
-    height: 175px;
     object-fit: cover;
 }
 
@@ -413,7 +412,7 @@
     display: none;
 }
 .actualites__arrow {
-    padding: var(--spacing-sm);
+    padding: 5px;
     border-radius: 50%;
     color: #C9C9C9;
     border: 1px solid #C9C9C9;

@@ -39,10 +39,11 @@
         white-space: nowrap;
     }
 
-    header button {
+    header button,
+    header .header__connexion {
         order: 2;
         flex: 0 0 auto;
-        padding: var(--spacing-sm) var(--spacing-md);
+
     }
 
     .raccourcis__item {
@@ -92,7 +93,7 @@
     .actualites__cards {
         display: flex;
         flex-direction: row;
-        align-items: stretch;
+
         gap: var(--spacing-md);
     }
 
@@ -194,10 +195,6 @@
         flex: 1 1 calc(25% - var(--spacing-md));
         min-width: 0;
         min-height: 6rem;
-    }
-
-    .page-grimper__section {
-        padding: var(--spacing-xl);
     }
 
     .pratique__items,
@@ -313,26 +310,9 @@
         align-self: center;
     }
 
-    .events-page {
-        gap: var(--spacing-xl);
-        padding: var(--spacing-xl) var(--spacing-2xl);
-    }
 
-    .events-hero {
-        padding: var(--spacing-2xl);
-    }
 
-    .events-hero__logo {
-        width: 5rem;
-        height: 5rem;
-    }
-
-    .events-hero h1 {
-        flex-direction: row;
-        font-size: var(--font-size-hero);
-    }
-
-    .events-featured {
+    .events-featured__container {
         flex-direction: row;
         align-items: stretch;
     }
@@ -358,9 +338,7 @@
         min-width: 0;
     }
 
-    .event-card__image {
-        height: 9rem;
-    }
+
 }
 
 @media (min-width: 55rem) {
@@ -417,6 +395,7 @@
         padding: var(--spacing-2xl);
     }
 
+
     .hero h1 {
         font-size: clamp(2.5rem, 4vw, 3.5rem);
     }
@@ -447,9 +426,7 @@
         gap: var(--spacing-2xl);
     }
 
-    .events-page {
-        padding: var(--spacing-2xl) var(--page-gutter);
-    }
+
 
     .event-card__image {
         height: 11rem;
@@ -468,7 +445,10 @@
 @media (max-width: 105rem) {
     .actualites__cards :nth-child(3),
     .actualites__cards :nth-child(4) {
-        display: none;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;  
     }
 }
 

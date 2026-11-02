@@ -1,198 +1,278 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="keywords" content="escalade, cours, tarifs, bloc, voie, Vertical">
-        <meta name="author" content="Vertical">
-        <meta name="language" content="fr">
-        <meta name="description" content="Découvrez les cours d'escalade, les tarifs et les horaires de Vertical.">
-        <meta name="theme-color" content="#ffffff">
 
-        <title>Grimper - Vertical</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="escalade, cours, tarifs, bloc, voie, Vertical">
+    <meta name="author" content="Vertical">
+    <meta name="language" content="fr">
+    <meta name="description" content="Découvrez les cours d'escalade, les tarifs et les horaires de Vertical.">
+    <meta name="theme-color" content="#ffffff">
 
-        <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/pages/grimper.css">
-        <link rel="stylesheet" href="css/nav.css">
-        <link rel="stylesheet" href="css/responsive.css">
-        <script src="https://kit.fontawesome.com/21da9b5e07.js" crossorigin="anonymous"></script>
-        <script src="js/main.js" defer></script>
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <a href="index.html"><img src="/assets/images/logos/long-logo.png" alt="Logo Vertical"></a>
+    <title>Grimper - Vertical</title>
+
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages/grimper.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/21da9b5e07.js" crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="/assets/images/logos/long-logo.png" alt="Logo Vertical"></a>
+        </div>
+        <a class="header__connexion" href="connexion.html">Connexion</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="grimper.html" class="active" aria-current="page">Grimper</a></li>
+                <li><a href="events.html">Evénements</a></li>
+                <li><a href="actu.html">Actualités</a></li>
+                <li><a href="club.html">Le Club</a></li>
+                <li><a href="info.html">Infos pratiques</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__presentation">
+                <img src="/assets/images/logos/logo.png" alt="">
+                <h1><span class="hero__title">Grimper</span> - <span class="hero__subtitle">à votre rythme</span></h1>
+                <p>Bloc, escalade de voie, cours pour tous les niveaux.</p>
             </div>
-            <button>Connexion</button>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="grimper.html" class="active" aria-current="page">Grimper</a></li>
-                    <li><a href="events.html">Evénements</a></li>
-                    <li><a href="actu.html">Actualités</a></li>
-                    <li><a href="club.html">Le Club</a></li>
-                    <li><a href="info.html">Infos pratiques</a></li>
-                </ul>
-            </nav>
-        </header>
+        </section>
 
-        <main>
-            <section class="hero">
-                <div class="hero__presentation">
-                    <img src="/assets/images/logos/logo.png" alt="">
-                    <h1><span class="hero__title">Grimper</span> - <span class="hero__subtitle">à votre rythme</span></h1>
-                    <p>Bloc, escalade de voie, cours pour tous les niveaux.</p>
-                </div>
-            </section>
+        <section class="raccourcis">
+            <a class="raccourcis__item" href="#cours"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                <h3>Cours</h3>
+            </a>
+            <a class="raccourcis__item" href="#planning"><i class="fa-regular fa-clock" aria-hidden="true"></i>
+                <h3>Horaires</h3>
+            </a>
+            <a class="raccourcis__item" href="#tarifs"><i class="fa-solid fa-tag" aria-hidden="true"></i>
+                <h3>Tarifs</h3>
+            </a>
+            <a class="raccourcis__item" href="#securite"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                <h3>Matériel / Sécurité</h3>
+            </a>
+        </section>
 
-            <section class="raccourcis">
-                <a class="raccourcis__item" href="#cours"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i><h3>Cours</h3></a>
-                <a class="raccourcis__item" href="#horaires"><i class="fa-regular fa-clock" aria-hidden="true"></i><h3>Horaires</h3></a>
-                <a class="raccourcis__item" href="#tarifs"><i class="fa-solid fa-tag" aria-hidden="true"></i><h3>Tarifs</h3></a>
-                <a class="raccourcis__item" href="#securite"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><h3>Matériel / Sécurité</h3></a>
-            </section>
+        <section class="pratique page-grimper__section" id="horaires">
+            <div class="pratique__title">
+                <h2>Pratique Libre</h2>
+                <p>Accès libre à la salle — venez grimper à votre rythme, sans réservation.</p>
+            </div>
+            <div class="pratique__items">
+                <article class="pratique__item">
+                    <h3>Bloc</h3>
+                    <p class="pratique__description">Sans corde · Mur inférieur à 4 m</p>
+                    <p>Le bloc est idéal pour progresser seul ou entre amis. Pas besoin de partenaire, ni de corde on se
+                        concentre sur des problèmes courts et techniques.</p>
+                    <ul>
+                        <li>Tous niveaux</li>
+                        <li>Voies régulièrement renouvelées</li>
+                        <li>Chaussons en location sur place</li>
+                    </ul>
+                </article>
+                <article class="pratique__item">
+                    <h3>Escalade de Voie</h3>
+                    <p class="pratique__description">Avec corde · Mur jusqu'à 12 m</p>
+                    <p>Découvrez la grimpe en hauteur avec assurage. Un partenaire ou un moniteur est requis. Idéal pour
+                        préparer les sorties en falaise.</p>
+                    <ul>
+                        <li>Corde fournie sur place</li>
+                        <li>Initiation à l'assurage possible</li>
+                        <li>Sorties falaise organisées régulièrement</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
 
-            <section class="pratique page-grimper__section" id="horaires">
-                <div class="pratique__title">
-                    <h2>Pratique Libre</h2>
-                    <p>Accès libre à la salle — venez grimper à votre rythme, sans réservation.</p>
-                </div>
-                <div class="pratique__items">
-                    <article class="pratique__item">
-                        <h3>Bloc</h3>
-                        <p class="pratique__description">Sans corde · Mur inférieur à 4 m</p>
-                        <p>Le bloc est idéal pour progresser seul ou entre amis. Pas besoin de partenaire, ni de corde on se concentre sur des problèmes courts et techniques.</p>
-                        <ul>
-                            <li>Tous niveaux</li>
-                            <li>Voies régulièrement renouvelées</li>
-                            <li>Chaussons en location sur place</li>
-                        </ul>
-                    </article>
-                    <article class="pratique__item">
-                        <h3>Escalade de Voie</h3>
-                        <p class="pratique__description">Avec corde · Mur jusqu'à 12 m</p>
-                        <p>Découvrez la grimpe en hauteur avec assurage. Un partenaire ou un moniteur est requis. Idéal pour préparer les sorties en falaise.</p>
-                        <ul>
-                            <li>Corde fournie sur place</li>
-                            <li>Initiation à l'assurage possible</li>
-                            <li>Sorties falaise organisées régulièrement</li>
-                        </ul>
-                    </article>
-                </div>
-            </section>
-
-            <section class="cours page-grimper__section" id="cours">
-                <div class="cours__title">
-                    <h2>Nos Cours</h2>
-                </div>
-                <div class="cours__cards">
-                    <article class="cours__card">
-                        <img src="/assets/images/cours/img1.webp" alt="Enfants qui grimpent sur un mur d'escalade" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=700&q=85'">
-                        <div class="cours__card__content"><h3>Cours Enfants (6–12 ans)</h3><p>Des séances ludiques encadrées pour initier les petits grimpeurs au bloc et à la voie en toute sécurité.</p><p class="cours__horaire"><i class="fa-regular fa-clock" aria-hidden="true"></i> Mercredi & samedi — 14h à 16h</p><a href="#contact" class="cours__bouton">Voir les cours</a></div>
-                    </article>
-                    <article class="cours__card">
-                        <img src="/assets/images/cours/img2.webp" alt="Mur d'escalade pour débutants" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1564760055775-d63b17a55c44?auto=format&fit=crop&w=700&q=85'">
-                        <div class="cours__card__content"><h3>Cours Adultes Débutants</h3><p>Apprentissage des bases : chaussage, gestuelle, lecture de voie et règles de sécurité fondamentales.</p><p class="cours__horaire"><i class="fa-regular fa-clock" aria-hidden="true"></i> Lundi & jeudi — 18h à 19h30</p><a href="#contact" class="cours__bouton">Voir les cours</a></div>
-                    </article>
-                    <article class="cours__card">
-                        <img src="/assets/images/cours/perfectionnement.jpg" alt="Grimpeurs qui s'entraînent" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=700&q=85'">
-                        <div class="cours__card__content"><h3>Cours Perfectionnement</h3><p>Pour les grimpeurs confirmés souhaitant travailler la technique, l'engagement, la résistance et la lecture de bloc avancée.</p><p class="cours__horaire"><i class="fa-regular fa-clock" aria-hidden="true"></i> Mardi & vendredi — 19h à 21h</p><a href="#contact" class="cours__bouton">Voir les cours</a></div>
-                    </article>
-                    <article class="cours__card">
-                        <img src="/assets/images/cours/img3.webp" alt="Mur d'escalade de voie" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?auto=format&fit=crop&w=700&q=85'">
-                        <div class="cours__card__content"><h3>Initiation Escalade de Voie</h3><p>Première expérience avec corde : apprentissage de l'assurage, des nœuds et de la communication grimpeur/assureur.</p><p class="cours__horaire"><i class="fa-regular fa-clock" aria-hidden="true"></i> Samedi — 10h à 12h</p><a href="#contact" class="cours__bouton">Voir les cours</a></div>
-                    </article>
-                </div>
-            </section>
-
-            <section class="tarifs page-grimper__section" id="tarifs">
-                <div class="tarifs__title"><h2>Tarifs & Abonnements</h2><p>Choisissez la formule qui correspond à votre pratique.</p></div>
-                <div class="tarifs__items">
-                    <article class="tarifs__item"><h3>Entrée Unique</h3>
-                        <p class="tarifs__prix">10 € <span>/ séance</span></p>
-                        <ul>
-                            <li>Accès salle complète</li>
-                            <li>Bloc + Voie</li>
-                            <li>Sans engagement</li>
-                        </ul>
-                        <a href="#contact" class="tarifs__bouton tarifs__bouton--clair">Choisir</a>
-                    </article>
-                    <article class="tarifs__item">
-                        <h3>Abonnement Mensuel</h3>
-                        <p class="tarifs__prix">49 € <span>/ mois</span></p>
-                        <ul>
-                            <li>Accès illimité à la salle</li>
-                            <li>Bloc + Voie inclus</li>
-                            <li>-10 % sur les cours</li>
-                            <li>Tarifs réduits événements</li>
-                        </ul>
-                        <a href="#contact" class="tarifs__bouton">S'abonner</a>
-                    </article>
-                    <article class="tarifs__item">
-                        <h3>Abonnement Annuel</h3>
-                        <p class="tarifs__prix">499 € <span>/ an</span></p>
-                        <ul>
-                            <li>Accès illimité toute l'année</li>
-                            <li>1 cours offert au choix</li>
-                            <li>Accès prioritaire événements</li>
-                            <li>-15 % sur les cours toute l'année</li>
-                        </ul>
-                        <a href="#contact" class="tarifs__bouton tarifs__bouton--bleu">S'abonner</a>
-                    </article>
-                </div>
-            </section>
-
-            <section class="planning page-grimper__section" aria-label="Planning des cours">
-                <img src="assets/images/planning/planning.webp" alt="Planning hebdomadaire des cours d'escalade, avec les horaires et les activités du lundi au dimanche" loading="lazy">
-            </section>
-
-            <section class="materiel page-grimper__section" id="securite">
-                <div class="materiel__items">
-                    <div class="materiel__item">
-                        <h2><span><i class="fa-solid fa-box-open" aria-hidden="true"></i></span>Matériel disponible</h2>
-                        <ul>
-                            <li><span>Chaussons d'escalade</span><strong>4 € / séance</strong></li>
-                            <li><span>Baudrier complet</span><strong>4 € / séance</strong></li>
-                            <li><span>Magnésie en poudre</span><strong>Incluse</strong></li>
-                            <li><span>Corde dynamique</span><strong>Incluse</strong></li>
-                        </ul>
+        <section class="cours page-grimper__section" id="cours">
+            <div class="cours__title">
+                <h2>Nos Cours</h2>
+            </div>
+            <div class="cours__cards">
+                <article class="cours__card">
+                    <img src="/assets/images/cours/img1.webp" alt="Enfants qui grimpent sur un mur d'escalade"
+                        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=700&q=85'">
+                    <div class="cours__card__content">
+                        <h3>Cours Enfants (6–12 ans)</h3>
+                        <p>Des séances ludiques encadrées pour initier les petits grimpeurs au bloc et à la voie en
+                            toute sécurité.</p>
+                        <p class="cours__horaire"><i class="fa-regular fa-clock" aria-hidden="true"></i> Mercredi &
+                            samedi — 14h à 16h</p><a href="#contact" class="cours__bouton">Voir les cours</a>
                     </div>
-                    <div class="materiel__item">
-                        <h2><span><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>Règles & Sécurité</h2>
-                        <ul class="materiel__securite">
-                            <li><i class="fa-solid fa-exclamation-triangle" aria-hidden="true"></i>Chaussons obligatoires sur le mur</li>
-                            <li><i class="fa-solid fa-exclamation-triangle" aria-hidden="true"></i>Ne jamais sauter depuis le sommet d'un bloc</li>
-                            <li><i class="fa-solid fa-exclamation-triangle" aria-hidden="true"></i>Assurage obligatoire pour les voies</li>
-                            <li><i class="fa-solid fa-exclamation-triangle" aria-hidden="true"></i>Présentation obligatoire à l'accueil à l'entrée</li>
-                            <li><i class="fa-solid fa-exclamation-triangle" aria-hidden="true"></i>Mineurs (-16 ans) accompagnés d'un adulte</li>
-                        </ul>
+                </article>
+                <article class="cours__card">
+                    <img src="/assets/images/cours/img2.webp" alt="Mur d'escalade pour débutants"
+                        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1564760055775-d63b17a55c44?auto=format&fit=crop&w=700&q=85'">
+                    <div class="cours__card__content">
+                        <h3>Cours Adultes Débutants</h3>
+                        <p>Apprentissage des bases : chaussage, gestuelle, lecture de voie et règles de sécurité
+                            fondamentales.</p>
+                        <p class="cours__horaire"><i class="fa-regular fa-clock" aria-hidden="true"></i> Lundi & jeudi —
+                            18h à 19h30</p><a href="#contact" class="cours__bouton">Voir les cours</a>
                     </div>
-                </div>
-            </section>
-        </main>
+                </article>
+                <article class="cours__card">
+                    <img src="/assets/images/cours/perfectionnement.jpg" alt="Grimpeurs qui s'entraînent"
+                        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=700&q=85'">
+                    <div class="cours__card__content">
+                        <h3>Cours Perfectionnement</h3>
+                        <p>Pour les grimpeurs confirmés souhaitant travailler la technique, l'engagement, la résistance
+                            et la lecture de bloc avancée.</p>
+                        <p class="cours__horaire"><i class="fa-regular fa-clock" aria-hidden="true"></i> Mardi &
+                            vendredi — 19h à 21h</p><a href="#contact" class="cours__bouton">Voir les cours</a>
+                    </div>
+                </article>
+                <article class="cours__card">
+                    <img src="/assets/images/cours/img3.webp" alt="Mur d'escalade de voie"
+                        onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?auto=format&fit=crop&w=700&q=85'">
+                    <div class="cours__card__content">
+                        <h3>Initiation Escalade de Voie</h3>
+                        <p>Première expérience avec corde : apprentissage de l'assurage, des nœuds et de la
+                            communication grimpeur/assureur.</p>
+                        <p class="cours__horaire"><i class="fa-regular fa-clock" aria-hidden="true"></i> Samedi — 10h à
+                            12h</p><a href="#contact" class="cours__bouton">Voir les cours</a>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-        <footer>
-            <div class="footer__container">
-                <div class="footer__container__top">
-                    <div class="footer__top__marque">
-                        <img src="/assets/images/logos/logo.png" alt="Logo Vertical">
-                        <h3>Vertical</h3>
-                        <p>Grimper, explorer, partager — le club de bloc et de voie de La Rochelle.</p>
-                    </div>
-                    <div class="footer__top__liens-rapides">
-                        <div class="footer__top__liens-rapides__panel"><h3>Navigation</h3><ul><li><a href="grimper.html">Grimper</a></li><li><a href="events.html">Evénements</a></li><li><a href="actu.html">Actualités</a></li><li><a href="club.html">Le Club</a></li></ul></div>
-                        <div class="footer__top__liens-rapides__panel"><h3>Pratique</h3><ul><li><a href="#tarifs">Tarifs</a></li><li><a href="#horaires">Horaires</a></li><li><a href="info.html#contact">Contact</a></li><li><a href="info.html#FAQ">FAQ</a></li></ul></div>
-                    </div>
+        <section class="tarifs page-grimper__section" id="tarifs">
+            <div class="tarifs__title">
+                <h2>Tarifs & Abonnements</h2>
+                <p>Choisissez la formule qui correspond à votre pratique.</p>
+            </div>
+            <div class="tarifs__items">
+                <article class="tarifs__item">
+                    <h3>Entrée Unique</h3>
+                    <p class="tarifs__prix">10 € <span>/ séance</span></p>
+                    <ul>
+                        <li>Accès salle complète</li>
+                        <li>Bloc + Voie</li>
+                        <li>Sans engagement</li>
+                    </ul>
+                    <a href="#contact" class="tarifs__bouton tarifs__bouton--clair">Choisir</a>
+                </article>
+                <article class="tarifs__item">
+                    <h3>Abonnement Mensuel</h3>
+                    <p class="tarifs__prix">49 € <span>/ mois</span></p>
+                    <ul>
+                        <li>Accès illimité à la salle</li>
+                        <li>Bloc + Voie inclus</li>
+                        <li>-10 % sur les cours</li>
+                        <li>Tarifs réduits événements</li>
+                    </ul>
+                    <a href="#contact" class="tarifs__bouton">S'abonner</a>
+                </article>
+                <article class="tarifs__item">
+                    <h3>Abonnement Annuel</h3>
+                    <p class="tarifs__prix">499 € <span>/ an</span></p>
+                    <ul>
+                        <li>Accès illimité toute l'année</li>
+                        <li>1 cours offert au choix</li>
+                        <li>Accès prioritaire événements</li>
+                        <li>-15 % sur les cours toute l'année</li>
+                    </ul>
+                    <a href="#contact" class="tarifs__bouton tarifs__bouton--bleu">S'abonner</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="planning page-grimper__section" aria-label="Planning des cours" id="planning">
+            <img src="assets/images/planning/planning.webp"
+                alt="Planning hebdomadaire des cours d'escalade, avec les horaires et les activités du lundi au dimanche"
+                loading="lazy">
+        </section>
+
+        <section class="materiel page-grimper__section" id="securite">
+            <div class="materiel__items">
+                <div class="materiel__item">
+                    <h2><span><i class="fa-solid fa-box-open" aria-hidden="true"></i></span>Matériel disponible</h2>
+                    <ul>
+                        <li><span>Chaussons d'escalade</span><strong>4 € / séance</strong></li>
+                        <li><span>Baudrier complet</span><strong>4 € / séance</strong></li>
+                        <li><span>Magnésie en poudre</span><strong>Incluse</strong></li>
+                        <li><span>Corde dynamique</span><strong>Incluse</strong></li>
+                    </ul>
                 </div>
-                <div class="footer__bottom">
-                    <div class="footer__bottom__adresse"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><div class="footer__bottom__adresse__content"><h3>Adresse</h3><p>144 rue des champignons</p><p>17100 La Rochelle, France</p></div></div>
-                    <div class="footer__bottom__reseaux"><a href="https://www.facebook.com/clubvertical" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook</a><a href="https://www.instagram.com/vertical_larochelle" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a></div>
-                    <div class="footer__bottom__copyright"><p>&copy; 2026 Vertical-LaRochelle.fr</p></div>
+                <div class="materiel__item">
+                    <h2><span><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>Règles & Sécurité</h2>
+                    <ul class="materiel__securite">
+                        <li><i class="fa-solid fa-exclamation-triangle" aria-hidden="true"></i>Chaussons obligatoires
+                            sur le mur</li>
+                        <li><i class="fa-solid fa-exclamation-triangle" aria-hidden="true"></i>Ne jamais sauter depuis
+                            le sommet d'un bloc</li>
+                        <li><i class="fa-solid fa-exclamation-triangle" aria-hidden="true"></i>Assurage obligatoire pour
+                            les voies</li>
+                        <li><i class="fa-solid fa-exclamation-triangle" aria-hidden="true"></i>Présentation obligatoire
+                            à l'accueil à l'entrée</li>
+                        <li><i class="fa-solid fa-exclamation-triangle" aria-hidden="true"></i>Mineurs (-16 ans)
+                            accompagnés d'un adulte</li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-    </body>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__container">
+            <div class="footer__container__top">
+                <div class="footer__top__marque">
+                    <img src="/assets/images/logos/logo.png" alt="Logo Vertical">
+                    <h3>Vertical</h3>
+                    <p>Grimper, explorer, partager — le club de bloc et de voie de La Rochelle.</p>
+                </div>
+                <div class="footer__top__liens-rapides">
+                    <div class="footer__top__liens-rapides__panel">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="grimper.html">Grimper</a></li>
+                            <li><a href="events.html">Evénements</a></li>
+                            <li><a href="actu.html">Actualités</a></li>
+                            <li><a href="club.html">Le Club</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__top__liens-rapides__panel">
+                        <h3>Pratique</h3>
+                        <ul>
+                            <li><a href="grimper.html#tarifs">Tarifs</a></li>
+                            <li><a href="index.html#horaires">Horaires</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                            <li><a href="index.html#FAQ">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom__adresse"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    <div class="footer__bottom__adresse__content">
+                        <h3>Adresse</h3>
+                        <p>144 rue des champignons</p>
+                        <p>17100 La Rochelle, France</p>
+                    </div>
+                </div>
+                <div class="footer__bottom__reseaux"><a href="https://www.facebook.com/clubvertical" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i>
+                        Facebook</a><a href="https://www.instagram.com/vertical_larochelle" target="_blank"
+                        rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        Instagram</a></div>
+                <div class="footer__bottom__copyright">
+                    <p>&copy; 2026 Vertical-LaRochelle.fr</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>

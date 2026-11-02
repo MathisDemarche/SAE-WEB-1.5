@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/pages/events.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://kit.fontawesome.com/21da9b5e07.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -26,7 +27,7 @@
             </a>
         </div>
 
-        <button type="button">Connexion</button>
+        <a class="header__connexion" href="connexion.html">Connexion</a>
 
         <nav>
             <ul>
@@ -40,170 +41,174 @@
         </nav>
     </header>
 
-    <main class="events-page">
-        <section class="events-hero">
-            <img src="/assets/images/logos/logo.png" alt="Logo Vertical" class="events-hero__logo">
-            <h1>
-                <span class="events-hero__title">ÉVÉNEMENTS</span>
-                <span>&</span>
-                <span class="events-hero__subtitle">VIE DU CLUB</span>
-            </h1>
-            <p>CONTESTS, SOIRÉES À THÈME, STAGES D'INITIATION ET SORTIES EN FALAISE.</p>
+    <main>
+        <section class="hero">
+            <div class="hero__presentation">
+                <img src="/assets/images/logos/logo.png" alt="">
+                <h1><span class="hero__title">Grimper</span> - <span class="hero__subtitle">à votre rythme</span></h1>
+                <p>CONTESTS, SOIRÉES À THÈME, STAGES D'INITIATION ET SORTIES EN FALAISE.</p>
+            </div>
         </section>
 
         <section class="events-featured">
-            <div class="events-featured__image">
-                <img src="/assets/images/events/img1.png" alt="Grimpeurs dans la salle Vertical pendant une soirée">
-            </div>
-            <div class="events-featured__content">
-                <span class="events-tag">À la une · Contest de Bloc</span>
-                <h2>VERTICAL Night Contest #3</h2>
-                <p class="events-featured__date"><span>▣</span> Vendredi 04 Décembre — 18h30 à 23h30</p>
-                <p class="events-featured__audience">Tous niveaux / Accessible à tous</p>
-                <p class="events-featured__description">Présentation du contest, DJ set, buvette et lots à gagner. Une soirée club ouverte à tous les niveaux pour grimper, partager et célébrer la communauté Vertical.</p>
+            <div class="events-featured__container">
+                <div class="events-featured__image">
+                    <img src="/assets/images/events/img1.png" alt="Grimpeurs dans la salle Vertical pendant une soirée">
+                </div>
+                <div class="events-featured__content">
+                    <span class="events-tag">À la une · Contest de Bloc</span>
+                    <h2>VERTICAL Night Contest #3</h2>
+                    <p class="events-featured__date"><span><i class="fas fa-calendar-alt"></i></span> Vendredi 04 Décembre — 18h30 à 23h30</p>
+                    <p class="events-featured__audience">Tous niveaux / Accessible à tous</p>
+                    <p class="events-featured__description">Présentation du contest, DJ set, buvette et lots à gagner. Une soirée club ouverte à tous les niveaux pour grimper, partager et célébrer la communauté Vertical.</p>
+                </div>
             </div>
         </section>
 
         <section class="events-search">
-            <div class="events-search__heading">
-                <h2>Recherchez un événement</h2>
-                <span class="events-search__count">6 événements à venir</span>
-            </div>
+            <div class="events-search__container">
+                <div class="events-search__heading">
+                    <h2>Recherchez un événement</h2>
+                    <span class="events-search__count">6 événements à venir</span>
+                </div>
 
-            <div class="events-search__bar">
-                <span>⌕</span>
-                <p>Recherche par mot-clé (ex: Contest, Ado, Outdoor)</p>
-            </div>
+                <div class="events-search__bar">
+                    <span>⌕</span>
+                    <p>Recherche par mot-clé (ex: Contest, Ado, Outdoor)</p>
+                </div>
 
-            <div class="events-filters">
-                <span class="events-filter events-filter--active">Tous</span>
-                <span class="events-filter">Compétitions & Contests</span>
-                <span class="events-filter">Stages & Cours spécialisés</span>
-                <span class="events-filter">Soirées & Apéros du club</span>
-                <span class="events-filter">Sorties Falaise / Outdoor</span>
-            </div>
+                <div class="events-filters">
+                    <span class="events-filter events-filter--active">Tous</span>
+                    <span class="events-filter">Compétitions & Contests</span>
+                    <span class="events-filter">Stages & Cours spécialisés</span>
+                    <span class="events-filter">Soirées & Apéros du club</span>
+                    <span class="events-filter">Sorties Falaise / Outdoor</span>
+                </div>
 
-            <div class="events-period">
-                <span class="events-period__active">À venir</span>
-                <span>Ce mois-ci</span>
-                <span>Événements passés</span>
+                <div class="events-period">
+                    <span class="events-period__active">À venir</span>
+                    <span>Ce mois-ci</span>
+                    <span>Événements passés</span>
+                </div>
             </div>
         </section>
 
         <section class="events-list" id="evenements">
-            <div class="events-list__heading">
-                <h2>Prochains Événements</h2>
-                <p>Découvrez les prochaines dates à Vertical et réservez votre place.</p>
-            </div>
+            <div class="events-list__container">
+                <div class="events-list__heading">
+                    <h2>Prochains Événements</h2>
+                    <p>Découvrez les prochaines dates à Vertical et réservez votre place.</p>
+                </div>
 
-            <div class="events-grid">
-                <article class="event-card">
-                    <div class="event-card__image">
-                        <img src="/assets/images/events/grande-voie.jpg" alt="Deux grimpeurs équipés en falaise au bord de la mer">
-                    </div>
-                    <div class="event-card__content">
-                        <p class="event-card__date"><span>▣</span> 12 Nov. 2026</p>
-                        <span class="events-tag">Stage perfectionnement</span>
-                        <h3>Initiation Rappel & Grande Voie</h3>
-                        <p class="event-card__description">Atelier technique pour apprendre à assurer en sécurité sur voie et en falaise.</p>
-                        <ul class="event-card__details">
-                            <li><span>⌖</span> Salle principale</li>
-                            <li><span>♙</span> 12 places restantes</li>
-                            <li><span>▣</span> 15 €</li>
-                        </ul>
-                        <a href="info.html#contact" class="events-button">EN SAVOIR PLUS</a>
-                    </div>
-                </article>
+                <div class="events-grid">
+                    <article class="event-card">
+                        <div class="event-card__image">
+                            <img src="/assets/images/events/img2.png" alt="Deux grimpeurs équipés en falaise au bord de la mer">
+                        </div>
+                        <div class="event-card__content">
+                            <p class="event-card__date"><span><i class="fa-solid fa-calendar"></i></span> 12 Nov. 2026</p>
+                            <span class="events-tag">Stage perfectionnement</span>
+                            <h3>Initiation Rappel & Grande Voie</h3>
+                            <p class="event-card__description">Atelier technique pour apprendre à assurer en sécurité sur voie et en falaise.</p>
+                            <ul class="event-card__details">
+                                <li><span><i class="fa-solid fa-location-dot"></i></span> Salle principale</li>
+                                <li><span><i class="fa-solid fa-user"></i></span> 12 places restantes</li>
+                                <li><span><i class="fa-solid fa-credit-card"></i></span> 15 €</li>
+                            </ul>
+                            <a href="info.html#contact" class="events-button">EN SAVOIR PLUS</a>
+                        </div>
+                    </article>
 
-                <article class="event-card">
-                    <div class="event-card__image">
-                        <img src="/assets/images/events/soiree-club.jpg" alt="Buffet préparé pour une soirée conviviale">
-                    </div>
-                    <div class="event-card__content">
-                        <p class="event-card__date"><span>▣</span> 19 Nov. 2026</p>
-                        <span class="events-tag">Soirée adhérents</span>
-                        <h3>Apéro des adhérents & Soirée projection</h3>
-                        <p class="event-card__description">Une soirée conviviale pour partager des vidéos, des projets et des nouvelles du club.</p>
-                        <ul class="event-card__details">
-                            <li><span>⌖</span> Café du club</li>
-                            <li><span>♙</span> 18 places restantes</li>
-                            <li><span>▣</span> Gratuit</li>
-                        </ul>
-                        <a href="info.html#contact" class="events-button">EN SAVOIR PLUS</a>
-                    </div>
-                </article>
+                    <article class="event-card">
+                        <div class="event-card__image">
+                            <img src="/assets/images/events/image3.jpg" alt="Buffet préparé pour une soirée conviviale">
+                        </div>
+                        <div class="event-card__content">
+                            <p class="event-card__date"><span><i class="fa-solid fa-calendar"></i></span> 19 Nov. 2026</p>
+                            <span class="events-tag">Soirée adhérents</span>
+                            <h3>Apéro des adhérents & Soirée projection</h3>
+                            <p class="event-card__description">Une soirée conviviale pour partager des vidéos, des projets et des nouvelles du club.</p>
+                            <ul class="event-card__details">
+                                <li><span><i class="fa-solid fa-location-dot"></i></span> Café du club</li>
+                                <li><span><i class="fa-solid fa-user"></i></span> 18 places restantes</li>
+                                <li><span><i class="fa-solid fa-credit-card"></i></span> Gratuit</li>
+                            </ul>
+                            <a href="info.html#contact" class="events-button">EN SAVOIR PLUS</a>
+                        </div>
+                    </article>
 
-                <article class="event-card">
-                    <div class="event-card__image">
-                        <img src="/assets/images/events/sortie-falaise.jpg" alt="Grimpeur sur une voie de falaise">
-                    </div>
-                    <div class="event-card__content">
-                        <p class="event-card__date"><span>▣</span> 26 Nov. 2026</p>
-                        <span class="events-tag">Sortie falaise</span>
-                        <h3>Sortie Falaise — Chaucre</h3>
-                        <p class="event-card__description">Une journée outdoor encadrée pour découvrir les voies de la falaise avec le club.</p>
-                        <ul class="event-card__details">
-                            <li><span>⌖</span> Falaise de Chaucre</li>
-                            <li><span>♙</span> 8 places restantes</li>
-                            <li><span>▣</span> 25 €</li>
-                        </ul>
-                        <a href="info.html#contact" class="events-button">EN SAVOIR PLUS</a>
-                    </div>
-                </article>
+                    <article class="event-card">
+                        <div class="event-card__image">
+                            <img src="/assets/images/events/img4.jpg" alt="Grimpeur sur une voie de falaise">
+                        </div>
+                        <div class="event-card__content">
+                            <p class="event-card__date"><span><i class="fa-solid fa-calendar"></i></span> 26 Nov. 2026</p>
+                            <span class="events-tag">Sortie falaise</span>
+                            <h3>Sortie Falaise - Chaucre</h3>
+                            <p class="event-card__description">Une journée outdoor encadrée pour découvrir les voies de la falaise avec le club.</p>
+                            <ul class="event-card__details">
+                                <li><span><i class="fa-solid fa-location-dot"></i></span> Falaise de Chaucre</li>
+                                <li><span><i class="fa-solid fa-user"></i></span> 8 places restantes</li>
+                                <li><span><i class="fa-solid fa-credit-card"></i></span> 25 €</li>
+                            </ul>
+                            <a href="info.html#contact" class="events-button">EN SAVOIR PLUS</a>
+                        </div>
+                    </article>
 
-                <article class="event-card">
-                    <div class="event-card__image">
-                        <img src="/assets/images/events/stage-ado.jpg" alt="Jeune grimpeur sur un mur d'escalade">
-                    </div>
-                    <div class="event-card__content">
-                        <p class="event-card__date"><span>▣</span> 03 Déc. 2026</p>
-                        <span class="events-tag">Stage ado</span>
-                        <h3>Stage ado — Initiation Bloc</h3>
-                        <p class="event-card__description">Un atelier ludique pour les jeunes grimpeurs avec jeux, parcours et encadrement.</p>
-                        <ul class="event-card__details">
-                            <li><span>⌖</span> Salle principale</li>
-                            <li><span>♙</span> 6 places restantes</li>
-                            <li><span>▣</span> 20 €</li>
-                        </ul>
-                        <a href="info.html#contact" class="events-button">EN SAVOIR PLUS</a>
-                    </div>
-                </article>
+                    <article class="event-card">
+                        <div class="event-card__image">
+                            <img src="/assets/images/events/img1.png" alt="Jeune grimpeur sur un mur d'escalade">
+                        </div>
+                        <div class="event-card__content">
+                            <p class="event-card__date"><span><i class="fa-solid fa-calendar"></i></span> 03 Déc. 2026</p>
+                            <span class="events-tag">Stage ado</span>
+                            <h3>Stage ado - Initiation Bloc</h3>
+                            <p class="event-card__description">Un atelier ludique pour les jeunes grimpeurs avec jeux, parcours et encadrement.</p>
+                            <ul class="event-card__details">
+                                <li><span><i class="fa-solid fa-location-dot"></i></span> Salle principale</li>
+                                <li><span><i class="fa-solid fa-user"></i></span> 6 places restantes</li>
+                                <li><span><i class="fa-solid fa-credit-card"></i></span> 20 €</li>
+                            </ul>
+                            <a href="info.html#contact" class="events-button">EN SAVOIR PLUS</a>
+                        </div>
+                    </article>
 
-                <article class="event-card">
-                    <div class="event-card__image">
-                        <img src="/assets/images/events/night-climbing.jpg" alt="Salle d'escalade pendant une soirée">
-                    </div>
-                    <div class="event-card__content">
-                        <p class="event-card__date"><span>▣</span> 10 Déc. 2026</p>
-                        <span class="events-tag">Soirée Night Climbing</span>
-                        <h3>Soirée Night Climbing — I</h3>
-                        <p class="event-card__description">Une soirée de grimpe dans une ambiance différente, avec musique et défis entre adhérents.</p>
-                        <ul class="event-card__details">
-                            <li><span><i class="fas fa-map-marker-alt"></i></span> Salle principale</li>
-                            <li><span><i class="fas fa-user-friends"></i></span> 6 places restantes</li>
-                            <li><span>▣</span> 20 €</li>
-                        </ul>
-                        <a href="info.html#contact" class="events-button">EN SAVOIR PLUS</a>
-                    </div>
-                </article>
+                    <article class="event-card">
+                        <div class="event-card__image">
+                            <img src="/assets/images/events/images.jpg" alt="Salle d'escalade pendant une soirée">
+                        </div>
+                        <div class="event-card__content">
+                            <p class="event-card__date"><span><i class="fa-solid fa-calendar"></i></span> 10 Déc. 2026</p>
+                            <span class="events-tag">Soirée Night Climbing</span>
+                            <h3>Soirée Night Climbing</h3>
+                            <p class="event-card__description">Une soirée de grimpe dans une ambiance différente, avec musique et défis entre adhérents.</p>
+                            <ul class="event-card__details">
+                                <li><span><i class="fas fa-map-marker-alt"></i></span> Salle principale</li>
+                                <li><span><i class="fas fa-user-friends"></i></span> 6 places restantes</li>
+                                <li><span><i class="fas fa-credit-card"></i></span> 20 €</li>
+                            </ul>
+                            <a href="info.html#contact" class="events-button">EN SAVOIR PLUS</a>
+                        </div>
+                    </article>
 
-                <article class="event-card">
-                    <div class="event-card__image">
-                        <img src="/assets/images/events/stage-ado-2.jpg" alt="Grimpeur sur un mur de bloc">
-                    </div>
-                    <div class="event-card__content">
-                        <p class="event-card__date"><span>▣</span> 17 Déc. 2026</p>
-                        <span class="events-tag">Stage ado</span>
-                        <h3>Stage ado — Initiation Bloc</h3>
-                        <p class="event-card__description">Un second créneau pour s'initier au bloc et découvrir les techniques essentielles de l'escalade.</p>
-                        <ul class="event-card__details">
-                            <li><span>⌖</span> Salle principale + Café du club</li>
-                            <li><span>♙</span> 8 places restantes</li>
-                            <li><span>▣</span> 20 €</li>
-                        </ul>
-                        <a href="info.html#contact" class="events-button">EN SAVOIR PLUS</a>
-                    </div>
-                </article>
+                    <article class="event-card">
+                        <div class="event-card__image">
+                            <img src="/assets/images/events/img5.webp" alt="Grimpeur sur un mur de bloc">
+                        </div>
+                        <div class="event-card__content">
+                            <p class="event-card__date"><span><i class="fa-solid fa-calendar"></i></span> 17 Déc. 2026</p>
+                            <span class="events-tag">Stage ado</span>
+                            <h3>Stage ado - Initiation Bloc</h3>
+                            <p class="event-card__description">Un second créneau pour s'initier au bloc et découvrir les techniques essentielles de l'escalade.</p>
+                            <ul class="event-card__details">
+                                <li><span><i class="fa-solid fa-location-dot"></i></span> Salle principale + Café du club</li>
+                                <li><span><i class="fa-solid fa-user"></i></span> 8 places restantes</li>
+                                <li><span><i class="fa-solid fa-credit-card"></i></span> 20 €</li>
+                            </ul>
+                            <a href="info.html#contact" class="events-button">EN SAVOIR PLUS</a>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
@@ -230,9 +235,9 @@
                         <h3>Pratiques</h3>
                         <ul>
                             <li><a href="grimper.html#tarifs">Tarifs</a></li>
-                            <li><a href="info.html#horaires">Horaires</a></li>
-                            <li><a href="info.html#contact">Contact</a></li>
-                            <li><a href="info.html#FAQ">FAQ</a></li>
+                            <li><a href="index.html#horaires">Horaires</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                            <li><a href="index.html#FAQ">FAQ</a></li>
                         </ul>
                     </div>
                 </div>
