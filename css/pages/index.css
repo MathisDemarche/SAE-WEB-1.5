@@ -241,6 +241,7 @@
 }
 
 .actualites {
+    background-color: var(--color-background);
     position: relative;
     display: flex;
     flex-direction: column;

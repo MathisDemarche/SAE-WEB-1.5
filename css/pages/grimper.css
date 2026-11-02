@@ -170,7 +170,7 @@
     transition: 0.3s ease;
 }
 .tarifs__item:hover {
-    zoom: 1.02;
+    transform: scale(1.02);
     box-shadow: 0 4px 10px rgba(0, 0, 0, .15);
 }
 
@@ -226,7 +226,9 @@
 .planning {
     padding: 0;
     overflow: hidden;
-    background: var(--color-secondary);
+    background: none;
+    border: none;
+    box-shadow: none;
 }
 
 .planning img {
@@ -250,7 +252,6 @@
 
 .materiel__item {
     padding-top: var(--spacing-lg);
-    border-top: var(--border-width) solid var(--color-border);
 }
 .materiel__item li:hover {
     transform: scale(1.02);
